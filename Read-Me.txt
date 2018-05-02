@@ -1,0 +1,9 @@
+- Install dotnet core sdk 2.1
+- install node
+- goto to root directory in command prompt
+- run dotnet restore command 
+- create blank database in sql server and set your connection string in appsettings.json
+- run npm install command
+- run dotnet run command
+- open another command prompt
+- run ng serve

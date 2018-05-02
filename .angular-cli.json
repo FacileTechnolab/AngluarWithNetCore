@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "shopfloor-webapp"
+  },
+  "apps": [
+    {
+      "root": "Client",
+      "outDir": "./wwwroot/",
+      "assets": [
+        "assets/images",
+        "assets/js"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "prefix": "app",
+      "styles": [
+        "assets/lib/bootstrap/dist/css/bootstrap.css",
+        "assets/lib/bootstrap/dist/css/bootstrap-theme.css",
+        "assets/css/ag-grid.css",
+        "assets/css/theme-bootstrap.css",
+        "assets/css/site.css",        
+        "../node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [
+        "assets/lib/jquery/dist/jquery.js",
+        "../node_modules/jquery.scrollto/jquery.scrollTo.min.js",
+        "assets/lib/bootstrap/dist/js/bootstrap.js"
+      ]            
+    }
+  ]
+}

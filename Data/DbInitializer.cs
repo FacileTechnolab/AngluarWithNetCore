@@ -1,0 +1,137 @@
+﻿using app3.Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace app3.Data
+{
+	public class DbInitializer
+	{
+		public static void Initialize(EmployeeContext context)
+		{
+			context.Database.EnsureCreated();
+			var employees = new Employee[] {
+				new Employee(){Department = "IT" , Email = "emp1@mailinator.com",FirstName = "Emp", LastName= " IT1", HireDate= new DateTime(2015,12,1), JobTitle ="Software Developer", Created = DateTime.Now, Modified = DateTime.Now },
+					new Employee(){ Department = "Dept1" , Email = "Test.Record1@mailinator.com",FirstName = "Test", LastName= "Record1", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	 new Employee(){ Department = "Dept2" , Email = "Test.Record2@mailinator.com",FirstName = "Test", LastName= "Record2", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept3" , Email = "Test.Record3@mailinator.com",FirstName = "Test", LastName= "Record3", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept4" , Email = "Test.Record4@mailinator.com",FirstName = "Test", LastName= "Record4", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept5" , Email = "Test.Record5@mailinator.com",FirstName = "Test", LastName= "Record5", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept6" , Email = "Test.Record6@mailinator.com",FirstName = "Test", LastName= "Record6", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept7" , Email = "Test.Record7@mailinator.com",FirstName = "Test", LastName= "Record7", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept8" , Email = "Test.Record8@mailinator.com",FirstName = "Test", LastName= "Record8", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept9" , Email = "Test.Record9@mailinator.com",FirstName = "Test", LastName= "Record9", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept10" , Email = "Test.Record10@mailinator.com",FirstName = "Test", LastName= "Record10", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept11" , Email = "Test.Record11@mailinator.com",FirstName = "Test", LastName= "Record11", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept12" , Email = "Test.Record12@mailinator.com",FirstName = "Test", LastName= "Record12", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept13" , Email = "Test.Record13@mailinator.com",FirstName = "Test", LastName= "Record13", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept14" , Email = "Test.Record14@mailinator.com",FirstName = "Test", LastName= "Record14", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept15" , Email = "Test.Record15@mailinator.com",FirstName = "Test", LastName= "Record15", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept16" , Email = "Test.Record16@mailinator.com",FirstName = "Test", LastName= "Record16", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept17" , Email = "Test.Record17@mailinator.com",FirstName = "Test", LastName= "Record17", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept18" , Email = "Test.Record18@mailinator.com",FirstName = "Test", LastName= "Record18", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept19" , Email = "Test.Record19@mailinator.com",FirstName = "Test", LastName= "Record19", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept20" , Email = "Test.Record20@mailinator.com",FirstName = "Test", LastName= "Record20", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept21" , Email = "Test.Record21@mailinator.com",FirstName = "Test", LastName= "Record21", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept22" , Email = "Test.Record22@mailinator.com",FirstName = "Test", LastName= "Record22", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept23" , Email = "Test.Record23@mailinator.com",FirstName = "Test", LastName= "Record23", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept24" , Email = "Test.Record24@mailinator.com",FirstName = "Test", LastName= "Record24", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept25" , Email = "Test.Record25@mailinator.com",FirstName = "Test", LastName= "Record25", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept26" , Email = "Test.Record26@mailinator.com",FirstName = "Test", LastName= "Record26", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept27" , Email = "Test.Record27@mailinator.com",FirstName = "Test", LastName= "Record27", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept28" , Email = "Test.Record28@mailinator.com",FirstName = "Test", LastName= "Record28", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept29" , Email = "Test.Record29@mailinator.com",FirstName = "Test", LastName= "Record29", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept30" , Email = "Test.Record30@mailinator.com",FirstName = "Test", LastName= "Record30", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept31" , Email = "Test.Record31@mailinator.com",FirstName = "Test", LastName= "Record31", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept32" , Email = "Test.Record32@mailinator.com",FirstName = "Test", LastName= "Record32", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept33" , Email = "Test.Record33@mailinator.com",FirstName = "Test", LastName= "Record33", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept34" , Email = "Test.Record34@mailinator.com",FirstName = "Test", LastName= "Record34", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept35" , Email = "Test.Record35@mailinator.com",FirstName = "Test", LastName= "Record35", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept36" , Email = "Test.Record36@mailinator.com",FirstName = "Test", LastName= "Record36", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept37" , Email = "Test.Record37@mailinator.com",FirstName = "Test", LastName= "Record37", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept38" , Email = "Test.Record38@mailinator.com",FirstName = "Test", LastName= "Record38", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept39" , Email = "Test.Record39@mailinator.com",FirstName = "Test", LastName= "Record39", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept40" , Email = "Test.Record40@mailinator.com",FirstName = "Test", LastName= "Record40", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept41" , Email = "Test.Record41@mailinator.com",FirstName = "Test", LastName= "Record41", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept42" , Email = "Test.Record42@mailinator.com",FirstName = "Test", LastName= "Record42", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept43" , Email = "Test.Record43@mailinator.com",FirstName = "Test", LastName= "Record43", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept44" , Email = "Test.Record44@mailinator.com",FirstName = "Test", LastName= "Record44", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept45" , Email = "Test.Record45@mailinator.com",FirstName = "Test", LastName= "Record45", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept46" , Email = "Test.Record46@mailinator.com",FirstName = "Test", LastName= "Record46", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept47" , Email = "Test.Record47@mailinator.com",FirstName = "Test", LastName= "Record47", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept48" , Email = "Test.Record48@mailinator.com",FirstName = "Test", LastName= "Record48", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept49" , Email = "Test.Record49@mailinator.com",FirstName = "Test", LastName= "Record49", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept50" , Email = "Test.Record50@mailinator.com",FirstName = "Test", LastName= "Record50", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept51" , Email = "Test.Record51@mailinator.com",FirstName = "Test", LastName= "Record51", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept52" , Email = "Test.Record52@mailinator.com",FirstName = "Test", LastName= "Record52", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept53" , Email = "Test.Record53@mailinator.com",FirstName = "Test", LastName= "Record53", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept54" , Email = "Test.Record54@mailinator.com",FirstName = "Test", LastName= "Record54", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept55" , Email = "Test.Record55@mailinator.com",FirstName = "Test", LastName= "Record55", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept56" , Email = "Test.Record56@mailinator.com",FirstName = "Test", LastName= "Record56", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept57" , Email = "Test.Record57@mailinator.com",FirstName = "Test", LastName= "Record57", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept58" , Email = "Test.Record58@mailinator.com",FirstName = "Test", LastName= "Record58", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept59" , Email = "Test.Record59@mailinator.com",FirstName = "Test", LastName= "Record59", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept60" , Email = "Test.Record60@mailinator.com",FirstName = "Test", LastName= "Record60", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept61" , Email = "Test.Record61@mailinator.com",FirstName = "Test", LastName= "Record61", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept62" , Email = "Test.Record62@mailinator.com",FirstName = "Test", LastName= "Record62", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept63" , Email = "Test.Record63@mailinator.com",FirstName = "Test", LastName= "Record63", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept64" , Email = "Test.Record64@mailinator.com",FirstName = "Test", LastName= "Record64", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept65" , Email = "Test.Record65@mailinator.com",FirstName = "Test", LastName= "Record65", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept66" , Email = "Test.Record66@mailinator.com",FirstName = "Test", LastName= "Record66", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept67" , Email = "Test.Record67@mailinator.com",FirstName = "Test", LastName= "Record67", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept68" , Email = "Test.Record68@mailinator.com",FirstName = "Test", LastName= "Record68", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept69" , Email = "Test.Record69@mailinator.com",FirstName = "Test", LastName= "Record69", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept70" , Email = "Test.Record70@mailinator.com",FirstName = "Test", LastName= "Record70", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept71" , Email = "Test.Record71@mailinator.com",FirstName = "Test", LastName= "Record71", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept72" , Email = "Test.Record72@mailinator.com",FirstName = "Test", LastName= "Record72", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept73" , Email = "Test.Record73@mailinator.com",FirstName = "Test", LastName= "Record73", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept74" , Email = "Test.Record74@mailinator.com",FirstName = "Test", LastName= "Record74", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept75" , Email = "Test.Record75@mailinator.com",FirstName = "Test", LastName= "Record75", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept76" , Email = "Test.Record76@mailinator.com",FirstName = "Test", LastName= "Record76", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept77" , Email = "Test.Record77@mailinator.com",FirstName = "Test", LastName= "Record77", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept78" , Email = "Test.Record78@mailinator.com",FirstName = "Test", LastName= "Record78", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept79" , Email = "Test.Record79@mailinator.com",FirstName = "Test", LastName= "Record79", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept80" , Email = "Test.Record80@mailinator.com",FirstName = "Test", LastName= "Record80", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept81" , Email = "Test.Record81@mailinator.com",FirstName = "Test", LastName= "Record81", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept82" , Email = "Test.Record82@mailinator.com",FirstName = "Test", LastName= "Record82", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept83" , Email = "Test.Record83@mailinator.com",FirstName = "Test", LastName= "Record83", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept84" , Email = "Test.Record84@mailinator.com",FirstName = "Test", LastName= "Record84", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept85" , Email = "Test.Record85@mailinator.com",FirstName = "Test", LastName= "Record85", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept86" , Email = "Test.Record86@mailinator.com",FirstName = "Test", LastName= "Record86", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept87" , Email = "Test.Record87@mailinator.com",FirstName = "Test", LastName= "Record87", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept88" , Email = "Test.Record88@mailinator.com",FirstName = "Test", LastName= "Record88", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept89" , Email = "Test.Record89@mailinator.com",FirstName = "Test", LastName= "Record89", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept90" , Email = "Test.Record90@mailinator.com",FirstName = "Test", LastName= "Record90", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept91" , Email = "Test.Record91@mailinator.com",FirstName = "Test", LastName= "Record91", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept92" , Email = "Test.Record92@mailinator.com",FirstName = "Test", LastName= "Record92", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept93" , Email = "Test.Record93@mailinator.com",FirstName = "Test", LastName= "Record93", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept94" , Email = "Test.Record94@mailinator.com",FirstName = "Test", LastName= "Record94", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept95" , Email = "Test.Record95@mailinator.com",FirstName = "Test", LastName= "Record95", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept96" , Email = "Test.Record96@mailinator.com",FirstName = "Test", LastName= "Record96", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept97" , Email = "Test.Record97@mailinator.com",FirstName = "Test", LastName= "Record97", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept98" , Email = "Test.Record98@mailinator.com",FirstName = "Test", LastName= "Record98", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept99" , Email = "Test.Record99@mailinator.com",FirstName = "Test", LastName= "Record99", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept100" , Email = "Test.Record100@mailinator.com",FirstName = "Test", LastName= "Record100", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept101" , Email = "Test.Record101@mailinator.com",FirstName = "Test", LastName= "Record101", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept102" , Email = "Test.Record102@mailinator.com",FirstName = "Test", LastName= "Record102", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept103" , Email = "Test.Record103@mailinator.com",FirstName = "Test", LastName= "Record103", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept104" , Email = "Test.Record104@mailinator.com",FirstName = "Test", LastName= "Record104", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept105" , Email = "Test.Record105@mailinator.com",FirstName = "Test", LastName= "Record105", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept106" , Email = "Test.Record106@mailinator.com",FirstName = "Test", LastName= "Record106", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept107" , Email = "Test.Record107@mailinator.com",FirstName = "Test", LastName= "Record107", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept108" , Email = "Test.Record108@mailinator.com",FirstName = "Test", LastName= "Record108", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept109" , Email = "Test.Record109@mailinator.com",FirstName = "Test", LastName= "Record109", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+	new Employee(){ Department = "Dept110" , Email = "Test.Record110@mailinator.com",FirstName = "Test", LastName= "Record110", HireDate= DateTime.Now.AddYears(-3), JobTitle ="Developer", Created = DateTime.Now, Modified = DateTime.Now },
+				};
+
+			//note addorupdate still not available Efcor2 version
+			if (context.Employees.ToList().Count == 0)
+			{
+				context.Employees.AddRange(employees);
+				context.SaveChanges();
+			}
+			
+		}
+	}
+}

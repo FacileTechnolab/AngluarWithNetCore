@@ -1,0 +1,15 @@
+<ul class="pagination">
+    <li>
+        <a href="javascript:void(0);" tabindex="-1" (click)="onPageChange({Page:pagerInfo,Type:'First'})">
+            <<
+        </a>
+    </li>
+    <li>
+        <a href="javascript:void(0);" tabindex="-1" (click)="onPageChange({Page:pagerInfo,Type:'Previous'})">
+            <
+        </a>
+    </li>
+    <li><span><strong>Page {{pagerInfo.currentPage}}</strong></span></li>
+    <li> <a href="javascript:void(0);" tabindex="-1" (click)="onPageChange({Page:pagerInfo,Type:'Next'})">></a> </li>
+    <li> <a href="javascript:void(0);" tabindex="-1" (click)="onPageChange({Page:pagerInfo,Type:'Last'})">>></a> </li>
+</ul>

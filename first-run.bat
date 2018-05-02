@@ -1,0 +1,2 @@
+dotnet restore
+npm install

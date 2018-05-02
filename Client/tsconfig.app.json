@@ -1,0 +1,9 @@
+{
+    "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./assets/js/app/out-tsc",
+    "module": "es2015",
+    "baseUrl": "",
+    "types": [ "jquery" ]
+  }
+}
